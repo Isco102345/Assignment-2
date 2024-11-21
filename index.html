@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="icon" href="./bookmark.png">
+    <!----------------Google Fonts------------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <!----------------Font Awesome----------------->
+    <link rel="stylesheet" href="./Css/all.min.css">
+    <!---------------BootStrap----------------->
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <!-----------------Style------------------------>
+    <link rel="stylesheet" href="./Css/Style.css">
+</head>
+
+<body class="vh-100 head">
+
+
+    <header>
+        <div class="container">
+            <div class="text text-center position-relative line">
+                <h1>Bookmarker</h1>
+            </div>
+
+            <div class="color-text text-center d-flex py-2 justify-content-center">
+                <i class="fa-solid fa-bookmark m-1 fs-4"></i>
+                <h2 class="fw-bold fs-3">Bookmark your favorite sites</h2>
+                <i class="fa-solid fa-bookmark m-1 fs-4"></i>
+            </div>
+
+            <!-- <div id="errorMessage" class="error-message text-center">
+                <span id="errorText"></span>
+                <button id="closeError" class="close-btn">X</button>
+            </div> -->
+
+            <div class="w-100 d-flex flex-column justify-content-center">
+                <label for="bookmarkName" class="fw-bold label-class">
+                    <i class="fa-solid fa-book-bookmark pe-2 pb-2"></i>
+                    Site Name
+                    <div class="d-flex justify-content-between align-items-center position-relative">
+                        <input type="text" id="bookmarkName" placeholder="Bookmark Name" class="form-control mb-4">
+                        <span class="error-icon" id="nameError" aria-hidden="true">!</span>
+                        <span class="valid-icon" id="namevalid" aria-hidden="true"><i
+                                class="fa-solid fa-check"></i></span>
+                    </div>
+                </label>
+            </div>
+
+            <div class="w-100 d-flex flex-column justify-content-center">
+                <label for="bookmarkURL" class="fw-bold label-class">
+                    <i class="fa-solid fa-link pe-2 pb-2"></i>
+                    Site URL
+                    <div class="d-flex justify-content-between align-items-center position-relative">
+                        <input type="url" id="bookmarkURL" placeholder="Website URL" class="form-control mb-4">
+                        <span class="error-icon" id="urlError" aria-hidden="true">!</span>
+                        <span class="valid-icon" id="urlValid" aria-hidden="true"><i
+                                class="fa-solid fa-check"></i></span>
+                    </div>
+                </label>
+            </div>
+
+            <div class="text-center line ">
+                <button onclick="Run()" class="btn btn-submit px-5  mt-4">Submit</button>
+            </div>
+
+            <table class="table table-light mt-4 text-center">
+                <thead>
+                    <tr>
+                        <th>index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="demo">
+
+                </tbody>
+            </table>
+        </div>
+    </header>
+
+    <!---------------------Scribt-------------------->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/Main.js"></script>
+    <!---------------------Scribt-------------------->
+</body>
+
+</html>
